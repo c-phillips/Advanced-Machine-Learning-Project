@@ -26,14 +26,14 @@ In the original work, the authors also perform several "trials" for each set of 
 ![Mushroom 10 Trials](figures/mushroom_10_trials.png)
 > Our results
 
-![Mushroom 100 Trials Original](figures/mushroom_original.png)
+![Mushroom 100 Trials Original](figures/mushroom_original.PNG)
 > Original Mushroom results
 
 ### Tic-Tac-Toe
 ![Tic-Tac-Toe 100 Trials](figures/tictactoe_100_trials.png)
 > Our results
 
-![Tic-Tac-Toe 100 Trials Original](figures/tictactoe_original.png)
+![Tic-Tac-Toe 100 Trials Original](figures/tictactoe_original.PNG)
 > Original Tic-Tac-Toe results
 
 
