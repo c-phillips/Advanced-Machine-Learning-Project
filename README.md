@@ -4,6 +4,16 @@
 
 ## Methodology
 
+When gathering results we use both the linear (1) and geometric (2) means of our accuracy measure.
+$$
+(1) \mu_l &= \frac{1}{n}\sum_{i=1}^n f(x_i,y_i)\\
+&\phantom{s}\\
+\phantom{s}\\
+(2) \mu_g &= \sqrt[\leftroot{2}\uproot{2}n]{\prod_{i=1}^n f(x_i,y_i)}
+$$
+
+The original paper uses the linear mean, so we have included it for direct comparison; however, a geometric mean will havily penalize the final score when there is even one particularly poor result. This means that to achieve a high final rating, every test must return a good result.
+
 ## Results
 ### Soybean:
 ![Soybean Small 100 Trials](figures/soybean_small_100trials.png)
