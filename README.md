@@ -31,7 +31,7 @@ The soybean dataset is small with only 47 samples and 35 attributes with 4 class
 #### Original Mushroom results
 ![Mushroom Original](figures/mushroom_original.PNG)
 
-The mushroom dataset is considerably larger than the soybean set with 8k+ samples and 22 features. One of the features is ill conditioned (due to several datapoints missing information) so the original authors removed that feature from their analysis and we followed suit. Additionally, to decrease the computation time, the authors use only 50 samples/trial, and the same was done here.
+The mushroom dataset is considerably larger than the soybean set with 8k+ samples and 22 features. One of the features is ill conditioned (due to several datapoints missing information) so the original authors removed that feature from their analysis and we followed suit. Additionally, to decrease the computation time, the authors use only 50 samples/trial, and the same was done here. The results do not correlate nearly as well as the soybean dataset. However, the held-out is still in a similar range and exhibits a similar behavior as the original.
 
 ### Tic Tac Toe:
 #### Our results
@@ -40,6 +40,6 @@ The mushroom dataset is considerably larger than the soybean set with 8k+ sample
 #### Original Tic Tac Toe results
 ![Tic Tac Toe Original](figures/tictactoe_original.PNG)
 
-The Tic Tac Toe dataset is also larger than soybean with nearly 1k samples. The dataset measures the possible set of board configurations for a game where X makes the first move. To simplify analysis we again follow the lead of the original authors and use only 100 samples/trial.
+The Tic Tac Toe dataset is also larger than soybean with nearly 1k samples. The dataset measures the possible set of board configurations for a game where X makes the first move. To simplify analysis we again follow the lead of the original authors and use only 100 samples/trial. Similar to the mushroom dataset, the held-out behavior is similar to that of the original, but the overall accuracy does not increase like it does in the original.
 
 ## Discussion
