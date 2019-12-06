@@ -22,6 +22,21 @@ In the original work, the authors also perform several "trials" for each set of 
 ![Soybean Small 100 Trials Original](figures/soybean_original.png)
 #### Original Soybean results
 
+### Mushroom:
+![Mushroom 10 Trials](figures/mushroom_10_trials.png)
+> Our results
+
+![Mushroom 100 Trials Original](figures/mushroom_original.png)
+> Original Mushroom results
+
+### Tic-Tac-Toe
+![Tic-Tac-Toe 100 Trials](figures/tictactoe_100_trials.png)
+> Our results
+
+![Tic-Tac-Toe 100 Trials Original](figures/tictactoe_original.png)
+> Original Tic-Tac-Toe results
+
+
 The soybean dataset is small with only 47 samples and 35 attributes with 4 class values. The trendline in our results agree with the trend in the original paper. However, through our testing we did not see the same amount of improvment from basic K-Means (0-constraints).
 
 ### Mushroom:
