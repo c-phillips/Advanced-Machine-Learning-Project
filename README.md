@@ -2,7 +2,7 @@
 
 ## Background
 
-Wagstaff, Cardie, Rogers, and Schroedl published a paper in the Eighteenth International Conference on Machine Learning, 2001, in which they proposed an adaptation to the standard k-means clustering algorithm. 
+Wagstaff, Cardie, Rogers, and Schroedl published a paper in the Eighteenth International Conference on Machine Learning, 2001, in which they proposed an adaptation to the standard k-means clustering algorithm.  This was written after a previous paper by Wagstaff and Cardie where they take a version of the COBWEB clustering algorithm and apply instance-level constraints in a similar manner. This was used for most of their baselines in their Constrained K-means alrogithm. The k-means algorithm was first named by MacQueen in 1967 where he introduced several proofs and lemmas relating to the algorithm. The algorithm has become one of the more common and simple clustering algorithms.
 
 ![algorithm](figures/copkmeans_algo.png)
 
