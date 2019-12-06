@@ -5,12 +5,7 @@
 ## Methodology
 
 When gathering results we use both the linear (1) and geometric (2) means of our accuracy measure.
-$$
-(1) \mu_l &= \frac{1}{n}\sum_{i=1}^n f(x_i,y_i)\\
-&\phantom{s}\\
-\phantom{s}\\
-(2) \mu_g &= \sqrt[\leftroot{2}\uproot{2}n]{\prod_{i=1}^n f(x_i,y_i)}
-$$
+[mean_eqs](http://www.sciweavers.org/tex2img.php?eq=%281%29%5Cquad%5Cmu%20%26%3D%20%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7Df%28x_i%2Cy_i%29%5C%5C%0A%282%29%5Cquad%5Cmu%20%26%3D%20%5Csqrt%5B%5Cleftroot%7B-1%7D%5Cuproot%7B1%7Dn%5D%7B%5Cprod_%7Bi%3D1%7D%5E%7Bn%7Df%28x_i%2Cy_i%29%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
 The original paper uses the linear mean, so we have included it for direct comparison; however, a geometric mean will havily penalize the final score when there is even one particularly poor result. This means that to achieve a high final rating, every test must return a good result.
 
