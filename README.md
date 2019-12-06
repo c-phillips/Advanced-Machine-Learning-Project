@@ -53,3 +53,24 @@ The mushroom dataset is considerably larger than the soybean set with 8k+ sample
 The Tic Tac Toe dataset is also larger than soybean with nearly 1k samples. The dataset measures the possible set of board configurations for a game where X makes the first move. To simplify analysis we again follow the lead of the original authors and use only 100 samples/trial. Similar to the mushroom dataset, the held-out behavior is similar to that of the original, but the overall accuracy does not increase like it does in the original.
 
 ## Discussion
+
+Our results do not align well in general with those from the original paper. Several differences between our approach and theirs could explain some of the discrepancies:
+1. Sample selection
+The original paper does not specify exactly how their limited dataset was sampled. We saw clearer trend agreement in the soybean dataset, which does not downsample from the data. 
+
+2. Cross validation procedure
+There could be some minor difference in implementation; however, we believe our cross validation procedure is correct and most likely not the cause of these discrepancies.
+
+3. Overall data selection
+Which data was used for the overall test score could change the result. We believe we have this procedure correct in that we used all folds from a 10-fold cross validation as the "overall" dataset.
+
+4. Definition of distance metric
+The distance metric used to identify the nearest cluster for a given point could have been very different in implementation. In particular: since all of these datasets are symbolically categorized in each feature the definition of distance can become ambiguous.
+
+5. Dataset processing
+On a similar note, how the data is processed could affect the way distance and clusters are calculated. Whether or not their data was processed symbolically or numerically could affect how the rest of the program proceeds. 
+
+6. Constraint Generation
+The generation of constraints could have a major effect on the algorithm's performance; however, we believe our random generation is inline with the original author's methods. 
+
+One point of interest is that our performance seems to align approximately on level with the hold-out sets from the original paper. This could be due to a different definition for the "held-out" set, or some other unknown cause. 
