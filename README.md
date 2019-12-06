@@ -85,3 +85,12 @@ On a similar note, how the data is processed could affect the way distance and c
 The generation of constraints could have a major effect on the algorithm's performance; however, we believe our random generation is inline with the original author's methods. 
 
 One point of interest is that our performance seems to align approximately on level with the hold-out sets from the original paper. This could be due to a different definition for the "held-out" set, or some other unknown cause. 
+
+## References
+
+Constrained K-Means Clustering with Background Information (Wagstaff, Cardie, Rogers and Schroedl) https://pdfs.semanticscholar.org/0bac/ca0993a3f51649a6bb8dbb093fc8d8481ad4.pdf 
+ 
+Some Methods for Classification and Analysis of Multivariate Observations (MacQueen) https://projecteuclid.org/download/pdf_1/euclid.bsmsp/1200512992 
+ 
+Clustering with Instance-Level Constraints (Wagstaff, Cardie) https://pdfs.semanticscholar.org/17ad/99229140cf72e4495412c44c73d52cc9d913.pdf 
+ 
