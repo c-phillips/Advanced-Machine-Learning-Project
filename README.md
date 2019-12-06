@@ -2,7 +2,11 @@
 
 ## Background
 
-Wagstaff, Cardie, Rogers, and Schroedl published a paper in the Eighteenth International Conference on Machine Learning, 2001, in which they proposed an adaptation to the standard k-means clustering algorithm. This algorithm uses background information about pairs of data points that must be in the same cluster, or in different clusters. The addition of this information allows a greater clustering accuracy. Instead of just putting a point in the nearest cluster, it puts it in the nearest valid cluster. If there is a must-link pair that a point is a member of, it will be placed in the same cluster as the other member of the must-link pair. If a point is a member of a can't-link pair, it will not be placed in the same cluster as the other member of the can't-link pair, even if it is the closest cluster. 
+Wagstaff, Cardie, Rogers, and Schroedl published a paper in the Eighteenth International Conference on Machine Learning, 2001, in which they proposed an adaptation to the standard k-means clustering algorithm. 
+
+![algorithm](figures/copkmeans_algo.png)
+
+This algorithm uses background information about pairs of data points that must be in the same cluster, or in different clusters. The addition of this information allows a greater clustering accuracy. Instead of just putting a point in the nearest cluster, it puts it in the nearest valid cluster. If there is a must-link pair that a point is a member of, it will be placed in the same cluster as the other member of the must-link pair. If a point is a member of a can't-link pair, it will not be placed in the same cluster as the other member of the can't-link pair, even if it is the closest cluster. 
 
 ![link_example](figures/link_violation_example.png)
 
