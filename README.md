@@ -15,8 +15,8 @@ Similar to the original work, we implement a 10-fold crossvalidation scheme for 
 In the original work, the authors also perform several "trials" for each set of constraints. We do the same here, so the data in our results represents not only the mean scores for a crossvalidation set, but also the mean of a set of "trials".
 
 ## Results
-#### Our results
 ### Soybean:
+#### Our results
 ![Soybean Small 100 Trials](figures/soybean_small_100trials.png)
 
 #### Original Soybean results
@@ -24,8 +24,8 @@ In the original work, the authors also perform several "trials" for each set of 
 
 The soybean dataset is small with only 47 samples and 35 attributes with 4 class values. The trendline in our results agree with the trend in the original paper. However, through our testing we did not see the same amount of improvment from basic K-Means (0-constraints).
 
-#### Our results
 ### Mushroom:
+#### Our results
 ![Mushroom 10 Trials](figures/mushroom_10_trials.png)
 
 #### Original Mushroom results
