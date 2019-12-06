@@ -14,15 +14,26 @@ In the paper, constrained k-means is applied to five different UCI datasets: soy
 
 ## Methodology
 
+### Hardware and software environment
+These tests were all run with Python 3.7 on a 4-core desktop machine.
+
+### Measuring and training
+Similar to the original work, we implement a 10-fold crossvalidation scheme for training and validation purposes. The clusters are trained on 9 of the folds and the 10th is held out as a validation set. The overall score measures the performance of all 10 folds together. 
+
+In the original work, the authors also perform several "trials" for each set of constraints. We do the same here, so the data in our results represents not only the mean scores for a crossvalidation set, but also the mean of a set of "trials". These trials are meant to smooth out the variance caused by randomly generated constraints.
+
+### Quantifying performance
+The result of the clustering algorithm is returned when a test is called post-training. The result is found using the Rand Index:
+
+![rand_index](figures/rand_inx.png)
+
+Which compares each point in the dataset to each other point, only adding 1 if their assignments agree with the labels. This comparison score is divided by the best possible score to scale the measure between 0 and 1.
+
 When gathering results we use both the linear (1) and geometric (2) means of our accuracy measure.
 
 ![mean_eqs](http://www.sciweavers.org/tex2img.php?eq=%281%29%5Cquad%5Cmu%20%26%3D%20%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7Df%28x_i%2Cy_i%29%5C%5C%0A%282%29%5Cquad%5Cmu%20%26%3D%20%5Csqrt%5B%5Cleftroot%7B-1%7D%5Cuproot%7B1%7Dn%5D%7B%5Cprod_%7Bi%3D1%7D%5E%7Bn%7Df%28x_i%2Cy_i%29%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
-The original paper uses the linear mean, so we have included it for direct comparison; however, a geometric mean will havily penalize the final score when there is even one particularly poor result. This means that to achieve a high final rating, every test must return a good result.
-
-Similar to the original work, we implement a 10-fold crossvalidation scheme for training and validation purposes. The clusters are trained on 9 of the folds and the 10th is held out as a validation set. The overall score measures the performance of all 10 folds together. 
-
-In the original work, the authors also perform several "trials" for each set of constraints. We do the same here, so the data in our results represents not only the mean scores for a crossvalidation set, but also the mean of a set of "trials".
+The original paper uses the linear mean, so we have included it for direct comparison; however, a geometric mean will heavily penalize the final score when there is even one particularly poor result. This means that to achieve a high final rating, every test must return a good result.
 
 ## Results
 ### Soybean:
